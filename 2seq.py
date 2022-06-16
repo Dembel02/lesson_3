@@ -9,3 +9,13 @@
 # Результат: 2, 4, 6, 9
 # (Дополнительно*) Предусмотреть что пользователь может использовать один из 3-х разделителей: запятую,
 # точку с запятой, слэш (1,2,3 1;2;3 1/2/3), но только какой то один 1,2;3/4 - так нельзя
+
+my_list = input('Введите числа через ,')
+my_numbers = my_list.replace(';', ' ').replace(',', ' ').split(' ')
+result = []
+for number in my_numbers:
+    if my_numbers.count(number) == 1:
+        result.append(number)
+
+print(my_numbers)
+print(result)

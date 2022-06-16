@@ -11,8 +11,10 @@
 
 my_list = []
 count_elem = int(input('Введите количество элементов будущего списка '))
+number = 0
 for i in range(count_elem):
-    my_list[i] = int(input(f'Введите {i+1} элемент: '))
+    number = int(input('Введите число'))
+    my_list.append(number)
 
-my_list_new = my_list.sort()
-print(my_list_new)
+my_list.sort()
+print(my_list)
