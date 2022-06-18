@@ -41,7 +41,7 @@ months = {'01': 'января', '02': 'февраля', '03': 'марта', '04'
           '05': 'мая', '06': 'июня', '07': 'июля', '08': 'августа',
           '09': 'сентября', '10': 'октября', '11': 'ноября', '12': 'декабря'}
 result = random.sample(writers.keys(), 5)
-#result = random.choices(list(writers.keys()), k=5)
+#result = random.choices(list(writers.keys()), k=5) # Проблема с повторяющимися знаменитостями
 answer = ()
 count = 0
 for man in result:
