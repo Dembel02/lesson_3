@@ -8,3 +8,14 @@
 # Результат: 1,3,4
 #
 # Предлагаю проверить работу программы на разных списках, чтобы убедиться что она работает верно
+my_list_1 = input('введите элементы первого списка :')
+my_list_1 = my_list_1.replace(';', ' ').replace(',', ' ').split(' ')
+my_list_2 = input('введите элементы второго списка :')
+my_list_2 = my_list_2.replace(';', ' ').replace(',', ' ').split(' ')
+
+for number in my_list_1[:]:
+    if number in my_list_2:
+        my_list_1.remove(number)
+
+#print(set(my_list_1)-set(my_list_2))
+print(my_list_1)
